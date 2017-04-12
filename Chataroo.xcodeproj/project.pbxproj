@@ -8,20 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		0E59EAB11E9E917A0053FB9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAB01E9E917A0053FB9A /* AppDelegate.swift */; };
-		0E59EAB31E9E917A0053FB9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAB21E9E917A0053FB9A /* ViewController.swift */; };
+		0E59EAB31E9E917A0053FB9A /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAB21E9E917A0053FB9A /* CameraVC.swift */; };
 		0E59EAB61E9E917A0053FB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E59EAB41E9E917A0053FB9A /* Main.storyboard */; };
 		0E59EAB81E9E917A0053FB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E59EAB71E9E917A0053FB9A /* Assets.xcassets */; };
 		0E59EABB1E9E917A0053FB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E59EAB91E9E917A0053FB9A /* LaunchScreen.storyboard */; };
+		0E59EACB1E9E918E0053FB9A /* AVCamAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAC41E9E918E0053FB9A /* AVCamAppDelegate.m */; };
+		0E59EACC1E9E918E0053FB9A /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAC61E9E918E0053FB9A /* AVCamPreviewView.m */; };
+		0E59EACD1E9E918E0053FB9A /* AVCamCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAC81E9E918E0053FB9A /* AVCamCameraViewController.m */; };
+		0E59EACE1E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EACA1E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E59EAAD1E9E917A0053FB9A /* Chataroo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chataroo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E59EAB01E9E917A0053FB9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0E59EAB21E9E917A0053FB9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E59EAB21E9E917A0053FB9A /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		0E59EAB51E9E917A0053FB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E59EAB71E9E917A0053FB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E59EABA1E9E917A0053FB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E59EABC1E9E917A0053FB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E59EAC21E9E918E0053FB9A /* Chataroo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chataroo-Bridging-Header.h"; sourceTree = "<group>"; };
+		0E59EAC31E9E918E0053FB9A /* AVCamAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamAppDelegate.h; sourceTree = "<group>"; };
+		0E59EAC41E9E918E0053FB9A /* AVCamAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamAppDelegate.m; sourceTree = "<group>"; };
+		0E59EAC51E9E918E0053FB9A /* AVCamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamPreviewView.h; sourceTree = "<group>"; };
+		0E59EAC61E9E918E0053FB9A /* AVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPreviewView.m; sourceTree = "<group>"; };
+		0E59EAC71E9E918E0053FB9A /* AVCamCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamCameraViewController.h; sourceTree = "<group>"; };
+		0E59EAC81E9E918E0053FB9A /* AVCamCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamCameraViewController.m; sourceTree = "<group>"; };
+		0E59EAC91E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamPhotoCaptureDelegate.h; sourceTree = "<group>"; };
+		0E59EACA1E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPhotoCaptureDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +67,39 @@
 		0E59EAAF1E9E917A0053FB9A /* Chataroo */ = {
 			isa = PBXGroup;
 			children = (
+				0E59EAD01E9E91C80053FB9A /* Controller */,
+				0E59EACF1E9E91C20053FB9A /* View */,
 				0E59EAB01E9E917A0053FB9A /* AppDelegate.swift */,
-				0E59EAB21E9E917A0053FB9A /* ViewController.swift */,
+				0E59EAC31E9E918E0053FB9A /* AVCamAppDelegate.h */,
+				0E59EAC41E9E918E0053FB9A /* AVCamAppDelegate.m */,
+				0E59EAC91E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.h */,
+				0E59EACA1E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.m */,
 				0E59EAB41E9E917A0053FB9A /* Main.storyboard */,
 				0E59EAB71E9E917A0053FB9A /* Assets.xcassets */,
 				0E59EAB91E9E917A0053FB9A /* LaunchScreen.storyboard */,
 				0E59EABC1E9E917A0053FB9A /* Info.plist */,
+				0E59EAC21E9E918E0053FB9A /* Chataroo-Bridging-Header.h */,
 			);
 			path = Chataroo;
+			sourceTree = "<group>";
+		};
+		0E59EACF1E9E91C20053FB9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E59EAC51E9E918E0053FB9A /* AVCamPreviewView.h */,
+				0E59EAC61E9E918E0053FB9A /* AVCamPreviewView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0E59EAD01E9E91C80053FB9A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E59EAC71E9E918E0053FB9A /* AVCamCameraViewController.h */,
+				0E59EAC81E9E918E0053FB9A /* AVCamCameraViewController.m */,
+				0E59EAB21E9E917A0053FB9A /* CameraVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +135,7 @@
 					0E59EAAC1E9E917A0053FB9A = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = J2C764CY4K;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E59EAB31E9E917A0053FB9A /* ViewController.swift in Sources */,
+				0E59EACB1E9E918E0053FB9A /* AVCamAppDelegate.m in Sources */,
+				0E59EAB31E9E917A0053FB9A /* CameraVC.swift in Sources */,
+				0E59EACC1E9E918E0053FB9A /* AVCamPreviewView.m in Sources */,
 				0E59EAB11E9E917A0053FB9A /* AppDelegate.swift in Sources */,
+				0E59EACD1E9E918E0053FB9A /* AVCamCameraViewController.m in Sources */,
+				0E59EACE1E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,11 +306,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = J2C764CY4K;
 				INFOPLIST_FILE = Chataroo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bio.chase.Chataroo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chataroo/Chataroo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +323,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = J2C764CY4K;
 				INFOPLIST_FILE = Chataroo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bio.chase.Chataroo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chataroo/Chataroo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +354,7 @@
 				0E59EAC11E9E917A0053FB9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
