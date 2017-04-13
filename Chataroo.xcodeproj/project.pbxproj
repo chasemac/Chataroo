@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E2F7DCA1E9EFB2F004EF8B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F7DC91E9EFB2F004EF8B5 /* GoogleService-Info.plist */; };
+		0E2F7DCC1E9FF0C4004EF8B5 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F7DCB1E9FF0C4004EF8B5 /* RoundTextField.swift */; };
+		0E2F7DCE1E9FF884004EF8B5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F7DCD1E9FF884004EF8B5 /* RoundedButton.swift */; };
+		0E2F7DD01E9FFDF4004EF8B5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F7DCF1E9FFDF4004EF8B5 /* LoginVC.swift */; };
 		0E59EAB11E9E917A0053FB9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAB01E9E917A0053FB9A /* AppDelegate.swift */; };
 		0E59EAB31E9E917A0053FB9A /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAB21E9E917A0053FB9A /* CameraVC.swift */; };
 		0E59EAB61E9E917A0053FB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E59EAB41E9E917A0053FB9A /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 /* Begin PBXFileReference section */
 		0E2F7DC81E9EBB02004EF8B5 /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
 		0E2F7DC91E9EFB2F004EF8B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0E2F7DCB1E9FF0C4004EF8B5 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		0E2F7DCD1E9FF884004EF8B5 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		0E2F7DCF1E9FFDF4004EF8B5 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0E59EAAD1E9E917A0053FB9A /* Chataroo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chataroo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E59EAB01E9E917A0053FB9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E59EAB21E9E917A0053FB9A /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -108,6 +114,8 @@
 			children = (
 				0E59EAC51E9E918E0053FB9A /* AVCamPreviewView.h */,
 				0E59EAC61E9E918E0053FB9A /* AVCamPreviewView.m */,
+				0E2F7DCB1E9FF0C4004EF8B5 /* RoundTextField.swift */,
+				0E2F7DCD1E9FF884004EF8B5 /* RoundedButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 				0E59EAC71E9E918E0053FB9A /* AVCamCameraViewController.h */,
 				0E59EAC81E9E918E0053FB9A /* AVCamCameraViewController.m */,
 				0E59EAB21E9E917A0053FB9A /* CameraVC.swift */,
+				0E2F7DCF1E9FFDF4004EF8B5 /* LoginVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -268,6 +277,9 @@
 				0E59EACB1E9E918E0053FB9A /* AVCamAppDelegate.m in Sources */,
 				0E59EAB31E9E917A0053FB9A /* CameraVC.swift in Sources */,
 				0E59EACC1E9E918E0053FB9A /* AVCamPreviewView.m in Sources */,
+				0E2F7DCE1E9FF884004EF8B5 /* RoundedButton.swift in Sources */,
+				0E2F7DCC1E9FF0C4004EF8B5 /* RoundTextField.swift in Sources */,
+				0E2F7DD01E9FFDF4004EF8B5 /* LoginVC.swift in Sources */,
 				0E59EAB11E9E917A0053FB9A /* AppDelegate.swift in Sources */,
 				0E59EACD1E9E918E0053FB9A /* AVCamCameraViewController.m in Sources */,
 				0E59EACE1E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.m in Sources */,
