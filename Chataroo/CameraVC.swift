@@ -22,11 +22,11 @@ class CameraVC: AVCamCameraViewController, AAPLCameraVCDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        guard FIRAuth.auth()?.currentUser != nil else {
-            // load login VC
-            performSegue(withIdentifier: "loginVC", sender: nil)
-            return
-        }
+        performSegue(withIdentifier: "loginVC", sender: nil)
+//        guard FIRAuth.auth()?.currentUser != nil else {
+//            performSegue(withIdentifier: "loginVC", sender: nil)
+//            return
+//        }
     }
 
     @IBAction func recordBtnPressed(_ sender: Any) {
