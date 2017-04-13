@@ -17,6 +17,7 @@
 		0E59EACC1E9E918E0053FB9A /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAC61E9E918E0053FB9A /* AVCamPreviewView.m */; };
 		0E59EACD1E9E918E0053FB9A /* AVCamCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAC81E9E918E0053FB9A /* AVCamCameraViewController.m */; };
 		0E59EACE1E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EACA1E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.m */; };
+		822D70D7BD2121CF22610F32 /* Pods_Chataroo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BBC09676F01F4E910A2AAA /* Pods_Chataroo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,9 @@
 		0E59EAC81E9E918E0053FB9A /* AVCamCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamCameraViewController.m; sourceTree = "<group>"; };
 		0E59EAC91E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamPhotoCaptureDelegate.h; sourceTree = "<group>"; };
 		0E59EACA1E9E918E0053FB9A /* AVCamPhotoCaptureDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPhotoCaptureDelegate.m; sourceTree = "<group>"; };
+		44BBC09676F01F4E910A2AAA /* Pods_Chataroo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chataroo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		475C6D8BB764130AD6FDDDE4 /* Pods-Chataroo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chataroo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chataroo/Pods-Chataroo.debug.xcconfig"; sourceTree = "<group>"; };
+		C487D3E8CE055E42C1F577BF /* Pods-Chataroo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chataroo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chataroo/Pods-Chataroo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822D70D7BD2121CF22610F32 /* Pods_Chataroo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +69,8 @@
 			children = (
 				0E59EAAF1E9E917A0053FB9A /* Chataroo */,
 				0E59EAAE1E9E917A0053FB9A /* Products */,
+				219158E7FAA4521C9E08A8C8 /* Pods */,
+				BE81F65BB530517C44075711 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +122,23 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		219158E7FAA4521C9E08A8C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				475C6D8BB764130AD6FDDDE4 /* Pods-Chataroo.debug.xcconfig */,
+				C487D3E8CE055E42C1F577BF /* Pods-Chataroo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE81F65BB530517C44075711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44BBC09676F01F4E910A2AAA /* Pods_Chataroo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E59EABF1E9E917A0053FB9A /* Build configuration list for PBXNativeTarget "Chataroo" */;
 			buildPhases = (
+				ACAEBA3C00A8B30C2A6A7F31 /* [CP] Check Pods Manifest.lock */,
 				0E59EAA91E9E917A0053FB9A /* Sources */,
 				0E59EAAA1E9E917A0053FB9A /* Frameworks */,
 				0E59EAAB1E9E917A0053FB9A /* Resources */,
+				C9A18FC3DE5EEBB70D145AAC /* [CP] Embed Pods Frameworks */,
+				F4EA855C20BC240C4B270C9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +211,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACAEBA3C00A8B30C2A6A7F31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9A18FC3DE5EEBB70D145AAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chataroo/Pods-Chataroo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4EA855C20BC240C4B270C9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chataroo/Pods-Chataroo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E59EAA91E9E917A0053FB9A /* Sources */ = {
@@ -318,6 +393,7 @@
 		};
 		0E59EAC01E9E917A0053FB9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475C6D8BB764130AD6FDDDE4 /* Pods-Chataroo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -335,6 +411,7 @@
 		};
 		0E59EAC11E9E917A0053FB9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C487D3E8CE055E42C1F577BF /* Pods-Chataroo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
