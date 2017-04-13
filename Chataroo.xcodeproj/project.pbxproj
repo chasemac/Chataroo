@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2F7DCA1E9EFB2F004EF8B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F7DC91E9EFB2F004EF8B5 /* GoogleService-Info.plist */; };
 		0E59EAB11E9E917A0053FB9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAB01E9E917A0053FB9A /* AppDelegate.swift */; };
 		0E59EAB31E9E917A0053FB9A /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EAB21E9E917A0053FB9A /* CameraVC.swift */; };
 		0E59EAB61E9E917A0053FB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E59EAB41E9E917A0053FB9A /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2F7DC81E9EBB02004EF8B5 /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
+		0E2F7DC91E9EFB2F004EF8B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E59EAAD1E9E917A0053FB9A /* Chataroo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chataroo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E59EAB01E9E917A0053FB9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E59EAB21E9E917A0053FB9A /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -48,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E2F7DC51E9EB926004EF8B5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0E2F7DC81E9EBB02004EF8B5 /* AAPLCameraVCDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		0E59EAA41E9E917A0053FB9A = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +78,7 @@
 		0E59EAAF1E9E917A0053FB9A /* Chataroo */ = {
 			isa = PBXGroup;
 			children = (
+				0E2F7DC51E9EB926004EF8B5 /* Protocols */,
 				0E59EAD01E9E91C80053FB9A /* Controller */,
 				0E59EACF1E9E91C20053FB9A /* View */,
 				0E59EAB01E9E917A0053FB9A /* AppDelegate.swift */,
@@ -79,6 +91,7 @@
 				0E59EAB91E9E917A0053FB9A /* LaunchScreen.storyboard */,
 				0E59EABC1E9E917A0053FB9A /* Info.plist */,
 				0E59EAC21E9E918E0053FB9A /* Chataroo-Bridging-Header.h */,
+				0E2F7DC91E9EFB2F004EF8B5 /* GoogleService-Info.plist */,
 			);
 			path = Chataroo;
 			sourceTree = "<group>";
@@ -164,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E59EABB1E9E917A0053FB9A /* LaunchScreen.storyboard in Resources */,
+				0E2F7DCA1E9EFB2F004EF8B5 /* GoogleService-Info.plist in Resources */,
 				0E59EAB81E9E917A0053FB9A /* Assets.xcassets in Resources */,
 				0E59EAB61E9E917A0053FB9A /* Main.storyboard in Resources */,
 			);
