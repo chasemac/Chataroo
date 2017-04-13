@@ -156,6 +156,9 @@
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="VNf-CB-Ngl" eventType="touchUpInside" id="tcq-kZ-nTm"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AP6-4g-x6B">
                                 <rect key="frame" x="65.5" y="130" width="244" height="64"/>
@@ -196,6 +199,10 @@
                             <constraint firstItem="Rx4-gK-EkD" firstAttribute="centerX" secondItem="yEt-fT-PI1" secondAttribute="centerX" id="zg2-aj-oEP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="Rx4-gK-EkD" id="AlR-ei-gvQ"/>
+                        <outlet property="passwordField" destination="mzc-Md-eId" id="tvV-YO-Qhw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dA8-Ac-gJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
