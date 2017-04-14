@@ -5,6 +5,7 @@
 //  Created by Chase McElroy on 4/13/17.
 //  Copyright © 2017 Chase McElroy. All rights reserved.
 //
+let FIR_CHILD_USERS = "users"
 
 import Foundation
 import FirebaseDatabase
@@ -20,8 +21,12 @@ class DataService {
         return FIRDatabase.database().reference()
     }
     
+    var usersRef: FIRDatabaseReference {
+        return mainRef.child(FIR_CHILD_USERS)
+    }
+    
     func saveUser(uid: String) {
         let profile: Dictionary<String, AnyObject> = ["firstName": "" as AnyObject, "lastName": "" as AnyObject]
-        mainRef.child("users").child(uid).child("profile").setValue(profile)
+        mainRef.child(FIR_CHILD_USERS).child(uid).child("profile").setValue(profile)
     }
 }

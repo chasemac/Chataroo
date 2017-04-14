@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="go9-Gc-VRI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -207,6 +208,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dA8-Ac-gJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="701.60000000000002" y="33.733133433283363"/>
+        </scene>
+        <!--UsersVC-->
+        <scene sceneID="74L-kN-uo8">
+            <objects>
+                <viewController id="go9-Gc-VRI" customClass="UsersVC" customModule="Chataroo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tYd-ac-10W"/>
+                        <viewControllerLayoutGuide type="bottom" id="MZr-RB-ZX7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tyS-Ph-G4u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dMN-eB-Uuc">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" id="Axr-tm-H2T" customClass="UserCell" customModule="Chataroo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Axr-tm-H2T" id="YYT-89-C4k">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jonbon23kickdawg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taR-1f-4Lw">
+                                                    <rect key="frame" x="28" y="5.5" width="230" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="QKZ-pg-LAX"/>
+                                                        <constraint firstAttribute="width" constant="230" id="qLD-4N-2BG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="taR-1f-4Lw" firstAttribute="leading" secondItem="YYT-89-C4k" secondAttribute="leadingMargin" constant="20" id="Mb8-DP-wmr"/>
+                                                <constraint firstItem="taR-1f-4Lw" firstAttribute="centerY" secondItem="YYT-89-C4k" secondAttribute="centerY" id="qZQ-oF-c5Z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="firstNameLbl" destination="taR-1f-4Lw" id="BEd-5H-43M"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="cn4-7R-bVD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dMN-eB-Uuc" firstAttribute="top" secondItem="cn4-7R-bVD" secondAttribute="bottom" id="33n-vL-sZq"/>
+                            <constraint firstItem="cn4-7R-bVD" firstAttribute="top" secondItem="tyS-Ph-G4u" secondAttribute="top" id="Aeg-Gr-OwT"/>
+                            <constraint firstAttribute="trailing" secondItem="cn4-7R-bVD" secondAttribute="trailing" id="QF2-Y9-c2O"/>
+                            <constraint firstItem="MZr-RB-ZX7" firstAttribute="top" secondItem="dMN-eB-Uuc" secondAttribute="bottom" id="VVd-pm-7r9"/>
+                            <constraint firstItem="dMN-eB-Uuc" firstAttribute="leading" secondItem="tyS-Ph-G4u" secondAttribute="leading" id="fJE-NA-tWF"/>
+                            <constraint firstAttribute="trailing" secondItem="dMN-eB-Uuc" secondAttribute="trailing" id="geT-ru-7Ig"/>
+                            <constraint firstItem="cn4-7R-bVD" firstAttribute="leading" secondItem="tyS-Ph-G4u" secondAttribute="leading" id="zVf-Sc-nnq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dMN-eB-Uuc" id="7C0-3k-SlC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbT-hG-iIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1536.8" y="33.733133433283363"/>
         </scene>
     </scenes>
     <resources>
