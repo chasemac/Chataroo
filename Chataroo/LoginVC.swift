@@ -31,6 +31,7 @@ class LoginVC: UIViewController {
                     return
                 }
             })
+            self.dismiss(animated: true, completion: nil)
             
         } else {
             let alert = UIAlertController(title: "Username & Password Required", message: "You must enter both a username & password", preferredStyle: .alert)

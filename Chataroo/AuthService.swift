@@ -65,7 +65,6 @@ class AuthService {
                 onComplete?("Invalid password", nil)
             case .errrorCodeAccountExistsWithDifferentCredential, .errorCodeEmailAlreadyInUse:
                 onComplete?("Could not create account. Email already in use", nil)
-                
             default:
                 onComplete?("There was a problem authenticating, Try again", nil)
             }

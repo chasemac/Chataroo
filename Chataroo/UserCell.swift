@@ -25,5 +25,7 @@ class UserCell: UITableViewCell {
         let imageStr = selected ? "messageindicatorchecked1" : "messageindicator1"
         self.accessoryView = UIImageView(image: UIImage(named: imageStr))
     }
+    
+    
 
 }
