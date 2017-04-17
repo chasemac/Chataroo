@@ -536,7 +536,8 @@ typedef NS_ENUM( NSInteger, AVCamLivePhotoMode ) {
 		}
 		
 		dispatch_async( dispatch_get_main_queue(), ^{
-			[self.delegate shouldEnableCameraUI:YES];
+// MARK: Check this later
+            //	[self.delegate shouldEnableCameraUI:YES];
 			[self.delegate shouldEnableCameraUI:self.captureModeControl.selectedSegmentIndex == AVCamCaptureModeMovie];
 			self.photoButton.enabled = YES;
 			self.livePhotoModeButton.enabled = YES;
@@ -689,8 +690,9 @@ typedef NS_ENUM( NSInteger, AVCamLivePhotoMode ) {
 		
 		See the AVCaptureFileOutputRecordingDelegate methods.
 	 */
+    [self.delegate shouldEnableRecordUI:NO];
 	[self.delegate shouldEnableCameraUI:NO];
-	[self.delegate shouldEnableRecordUI:NO];
+	
 	self.captureModeControl.enabled = NO;
 	
 	/*
